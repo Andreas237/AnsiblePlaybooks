@@ -1,0 +1,7 @@
+# Run in a virtual environment
+
+sudo apt update
+
+sudo apt upgrade
+
+pip3 install -f python-setuptools python-smbus i2c-tools

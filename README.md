@@ -1,8 +1,9 @@
 # AnsiblePlaybooks
 
-// TODO: what files are in here and how do we use them?
 
 ## Raspberry-Pi Zeros: Home Network
+
+### Steps taken to setup a Raspberr-Pi
  0. Configure SD card
     `dd if=~/OS_images/2021-01-11-raspios-buster-armhf-lite.img of=/dev/rdisk<#> bs=4m`
   - add `wpa_supplicant_home-net.conf` contents to the Pi as `wpa_supplicant.conf`
@@ -20,6 +21,17 @@
 
 4. Run *<playbook>*
 
+### Files
+
+`playbook_pi-zero.yaml` Install Djano, run my site.  Can github ssh be configured through Ansible?
+
+`setup_pre_boot.sh` writes the OS image to an SD card, enables SSH, and configures WiFi.  All done ahead of booting the Pi.
+
+`setup_post_boot.sh` update packages, install ansible and virtualenv, activate the virtualenv, run the playbook.
+
+
+`wpa_supplicant.conf` the file with my local WiFi configuration.
+
 
 
 ### Status
@@ -32,3 +44,5 @@ Provisioned 4GB, 8GB and 64GB SD cards.  Haven't tested whether they're connecte
  - Provision Pi with ansible and shell scripts [here](sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}).
 
  - Setup Debian with Ansible [here](http://www.lpenz.org/articles/ansiblerpi/index.html).
+
+ - Ansible configures SSH to private Github repo [here](https://www.jeffgeerling.com/blog/2018/cloning-private-github-repositories-ansible-on-remote-server-through-ssh).

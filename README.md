@@ -30,3 +30,5 @@ Provisioned 4GB, 8GB and 64GB SD cards.  Haven't tested whether they're connecte
  - Setting up `SSH` and wifi after installing Raspbian and before logging in [here](https://zedt.eu/tech/linux/how-to-pre-configure-raspberry-pi-for-remote-ssh-and-wifi/).
 
  - Provision Pi with ansible and shell scripts [here](sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}).
+
+ - Setup Debian with Ansible [here](http://www.lpenz.org/articles/ansiblerpi/index.html).

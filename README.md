@@ -5,9 +5,6 @@
 
 ### Steps taken to setup a Raspberr-Pi
  0. Configure SD card
-    `dd if=~/OS_images/2021-01-11-raspios-buster-armhf-lite.img of=/dev/rdisk<#> bs=4m`
-  - add `wpa_supplicant_home-net.conf` contents to the Pi as `wpa_supplicant.conf`
-  - `touch ssh` to setup ssh
  1. Check Wifi to see that the Pi's show up
  2. Pull down repo
   - How to setup SSH keys

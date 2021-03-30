@@ -19,8 +19,9 @@ DISK=$1
 IMAGE=$2
 WPA_conf=$3
 
-echo "Disk being written:       $1"
-echo "Image being written:      $2"
+echo "Disk being written:               $1"
+echo "Image being written:              $2"
+echo "WPA Supplicant being written:     $3"
 
 
 

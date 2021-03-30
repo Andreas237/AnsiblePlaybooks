@@ -1,0 +1,24 @@
+
+
+- hosts: 
+- Apps:
+    - docker
+    - GNU Radio
+         - gr-gsm
+         - gr-radar
+         - osmosdr
+         - lime sdr
+         - UHD
+    - MobSF
+    - Atom.IO
+    - Wireshark
+    - OpenBTS
+    - NMAP
+    - Go
+    - Go Buster
+    - Ghidra
+    - Burp Suite Community Edition
+
+
+- credentials:
+    - github + credentials

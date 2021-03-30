@@ -2,10 +2,14 @@
 
 # Install ansible and run the playbook specified in $1
 
+# update repos
 sudo apt update -y
 
+# upgrade installs
 sudo apt upgrade -y
 
-pip3 install ansible rauth django python-setuptools python-smbus i2c-tools
+# install ansible
+sudo apt install ansible -y
 
+# run a playbook passed to this script
 ansible-playbook $1
